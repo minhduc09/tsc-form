@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-8">
+				<h1>Liên hệ với chúng tôi</h1>
+				<div class="contact-alert">
+					<h5 class="contact-message" hidden>Xin vui lòng, điền vào các lĩnh vực sau đây:</h3>
+					<ul>
+						<li id="name" hidden>Tên</li>
+						<li id="email" hidden>Email</li>
+						<li id="message" hidden>Tin nhắn</li>
+					</ul>
+					<h5 class="alert-message" hidden>Xin hãy sửa những lỗi sau:</h5>
+					<ul>
+						<li id="alert-email" hidden>Không hợp lệ email</li>
+					</ul>
+				</div>
+				<div>
+					<form class="form">
+						<div class="div-form contact_info">
+							<label for="name" class="contact_form">Tên</label>
+   							<input type="text" class="form-control" id="form-name" placeholder="Tên">
+						</div>
+						<div class="div-form contact_info">
+							<label for="email" class="contact_form">Địa chỉ Email</label>
+   							<input type="email" class="form-control" id="form-email" placeholder="Địa chỉ Email">
+						</div>
+						<div class="div-form">
+							<label for="message" class="contact_form">Tin nhắn</label>
+   							<textarea class="form-control" placeholder="Tin nhắn" id="form-mess" style="height: 150px"></textarea>
+						</div>
+					</form>
+					<div class="contact_button">
+						<button class="contact_submit button" onclick="g_classContact.validateData()">Gửi</button>
+					</div>
+				</div>
+			</div>
+  			<div class="col-md-4">
+  				<ul>
+  					<li>– Tên công ty: CÔNG TY CỔ PHẦN DỊCH VỤ CÔNG NGHỆ TSC VIỆT NAM</li>
+  					<li>– Tên nước ngoài: VIET NAM TSC TECHNOLOGY SERVICE JOINT STOCK COMPANY</li>
+  					<li>– Tên viết tắt : TSC Servives</li>
+  					<li>– Trụ sở chính : Số 2 , Ngõ 479 Hoàng Quốc Việt , Phường Nghĩa Tân , Quận Cầu Giấy , Hà Nội , Việt Nam</li>
+  					<li>☎️ Điện thoại : (024)39.656.656 – (024)32.121.883 Fax : (024)39.656.656</li>
+  				</ul>
+  			</div>
+		</div>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/app.main.js"></script>
+	
+</body>
+</html>

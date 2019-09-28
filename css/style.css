@@ -1,0 +1,103 @@
+.container{
+	padding-top: 100px;
+}
+h1{
+	margin-bottom: 3%;
+    padding: 0 0 0 3%;
+    font-size: 26px;
+}
+.col-md-4 ul {
+  list-style-type: none;
+}
+.col-md-4 ul li{
+	padding-bottom: 1em;
+}
+.contact_form{
+	display: none;
+}
+.div-form{
+	margin-bottom: 3%;
+    padding: 0 0 0 3%;
+}
+.div-form input, .div-form textarea{
+	color: #444;
+    background-color: #eee;
+    font-size: 14px;
+    border: none;
+    border-radius: 0;
+}
+::placeholder{
+	color: #999;
+	opacity: 0.9;
+}
+.contact_info{
+	float: left;
+	width: 50%;
+}
+.contact_button {
+    
+}
+.contact_submit{
+	float: right;
+    overflow: hidden;
+    margin-top: -1.5%;
+    text-align: right;
+    
+    display: inline-block;
+    margin: 0 0 0 15px;
+    font-family: inherit;
+    cursor: pointer;
+    color: #2ea3f2;
+}
+.button {
+    position: relative;
+    padding: 0.3em 1em;
+    border: 2px solid;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.7em !important;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.button:after{
+	content: '>';
+	position: absolute;
+  	opacity: 0;  
+  	transition: 0.2s;
+  	outline: 0;
+}
+.button:hover {
+    padding: 0.3em 2em 0.3em 1em;
+    border: 2px solid transparent;
+    margin-left: 0;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.05);
+}
+.button:hover:after {
+  	opacity: 1;
+  	right: 20px;
+}
+.contact-message, .alert-message{
+	padding-left: 3%;
+}
+@media(max-width: 990px ){
+	ul{
+		padding-top: 50px;
+		padding-left: 3%;	/*align with the form*/
+	}
+}
+@media (max-width: 767px) {
+    .contact_info{
+    	width: 100%; 		/*move Name and Email to 2 rows*/
+    	float: none;
+	}
+	ul{
+		padding-top: 50px;
+		padding-left: 3%;	/*align with the form*/
+	}
+}
